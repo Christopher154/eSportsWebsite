@@ -1,18 +1,83 @@
-html{
-    background-color: black;
+html, body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: #993;
 }
-#gameLogo{
-    height:100%;
+
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto 0; /* the bottom margin is the negative value of the footer's height */
+    position: relative
 }
-#Header{
-    height:100px;
+
+#header {
+    height: 50px;
 }
+#header-content {
+    height: 50px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 0px;
+}
+#content {
+    height: auto;
+    padding: 30px;
+    align-content: center;
+}
+
+#relevantMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0px;
+    height: 110%;
+}
+
+#relevantList a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+#relevantList a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#relevantList a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#main {
+    margin-left: 205px;
+    float: left;
+    position: absolute;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    margin-right: 150px; 
+}
+
 #navBar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    height: 50px;
 }
 
 #navList {
@@ -23,50 +88,73 @@ html{
     display: block;
     color: white;
     text-align: center;
+    margin: 0px 0px;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
+#navList a:hover:not(.active) {
     background-color: #111;
 }
 
-#relevantMenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    background-color: #333;
+#gameLogo {
+    height: 100px;
+    width: 300px;
+}
+
+.container {
+    width:800px;
+    height:450px;
+    position:relative;
+    overflow:hidden;
+    align-self: center;
+    align-content: center;
+  }
+  
+  .css-carousel {
+    width:500%;
+    -webkit-animation: css-carousel 20s linear infinite;
+    -moz-animation: css-carousel 20s linear infinite;
+    -ms-animation: css-carousel 20s linear infinite;
+    animation: css-carousel 20s linear infinite;
+    align-self: center;
+  }
+  
+  .css-carousel .css-img{
+    display:inline-block;
+    height: 450px;
+    width: 800px;
+  }
+  .css-carousel img:not(:first-child){
     float:left;
-    height:700px;
-    position: absolute;
-    top:147px;
-    left:0;
-}
-
-#relevantList {
-    text-align: center;
-    border-bottom: 1px solid #555;
-    
-    
-}
-#relevantList a{
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-#gameDesc{
-    color:white;
-}
-
-#content {
-    float:right;
-}
-#gameImage{
-    width: 90%;
-    height: 30%;
-    image-rendering: -moz-crisp-edges;
-    -ms-interpolation-mode: bicubic;
-}
-
+  }
+  
+  @-webkit-keyframes css-carousel {
+    0%, 23% {margin-left:0}
+    25%, 48% { margin-left:-100%; }
+    50%, 73% { margin-left:-200%; }
+    75%, 98% { margin-left:-300%;}
+    100% { margin-left:0;}
+      
+  }
+  @-moz-keyframes css-carousel {
+    0%, 23% {margin-left:0}
+    25%, 48% { margin-left:-100%; }
+    50%, 73% { margin-left:-200%; }
+    75%, 98% { margin-left:-300%;}
+    100% { margin-left:0;}
+  }
+  @-ms-keyframes css-carousel {
+    0%, 23% {margin-left:0}
+    25%, 48% { margin-left:-100%; }
+    50%, 73% { margin-left:-200%; }
+    75%, 98% { margin-left:-300%;}
+    100% { margin-left:0;}
+  }
+  @keyframes css-carousel {
+    0%, 23% {margin-left:0}
+    25%, 48% { margin-left:-100%; }
+    50%, 73% { margin-left:-200%; }
+    75%, 98% { margin-left:-300%;}
+    100% { margin-left:0;}
+  }
