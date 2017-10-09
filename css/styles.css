@@ -1,12 +1,83 @@
-html{
-    background-color: black;
-    color: white;
-    border:0;
-    padding:0;
-    margin:0;
+html, body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: #333;
 }
-body{
-    margin: 0px; 
+#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+    position: relative
+}
+#footer {
+    height: 30px;
+    background-color: red;
+}
+#footer-content {
+    height: 25px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 5px;
+}
+.push {
+    height: 50px;
+    clear: both;
+}
+
+#header {
+    height: 50px;
+}
+#header-content {
+    height: 50px; /* height + top/bottom paddding + top/bottom border must add up to footer height */
+    padding: 0px;
+}
+#content {
+    height: 100%;
+}
+
+#relevantMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 50px;
+}
+
+#relevantList a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+#relevantList a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#relevantList a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+#main {
+    margin-left: 205px;
+    margin-bottom: -50px;
+    float: left;
+    position: absolute;
+    overflow: hidden;
+    width: auto;
+    height: 100%;
 }
 
 #navBar {
@@ -15,6 +86,7 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    height: 50px;
 }
 
 #navList {
@@ -22,32 +94,14 @@ body{
 }
 
 #navList a {
-    float: left;
-}
-
-#relevantMenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #333;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-}
-
-#relevantList {
     display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;}
-    
-    #relevantList a.active {
-        background-color: #4CAF50;
-        color: white;
-    }
-    
-    #relevantList a:hover:not(.active) {
-        background-color: #555;
-        color: white;
-    }
+    color: white;
+    text-align: center;
+    margin: 0px 0px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navList a:hover:not(.active) {
+    background-color: #111;
+}
