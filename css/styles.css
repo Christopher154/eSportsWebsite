@@ -1,4 +1,7 @@
-ul {
+html{
+    background-color: black;
+}
+#navBar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,18 +9,34 @@ ul {
     background-color: #333;
 }
 
+#navList {
+    float: left;
+}
+
+#navList a {
 li {
     float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+#relevantMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #333;
+}
+
+#relevantList {
+    text-align: center;
+    border-bottom: 1px solid #555;
+    
+}
+#relevantList a{
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
 }
