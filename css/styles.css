@@ -1,6 +1,14 @@
 html{
     background-color: black;
+    color: white;
+    border:0;
+    padding:0;
+    margin:0;
 }
+body{
+    margin: 0px; 
+}
+
 #navBar {
     list-style-type: none;
     margin: 0;
@@ -14,22 +22,25 @@ html{
 }
 
 #navList a {
-li {
     float: left;
 }
 
-li a {
-}
-
 #relevantMenu {
+    
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
+    height: 100vh;
     background-color: #333;
+    float: left;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #relevantList {
+    flex-grow: 1;
     text-align: center;
     border-bottom: 1px solid #555;
     
