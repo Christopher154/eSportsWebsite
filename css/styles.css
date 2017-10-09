@@ -1,6 +1,12 @@
 html{
     background-color: black;
 }
+#gameLogo{
+    height:100%;
+}
+#Header{
+    height:100px;
+}
 #navBar {
     list-style-type: none;
     margin: 0;
@@ -29,13 +35,19 @@ li a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 10%;
     background-color: #333;
+    float:left;
+    height:700px;
+    position: absolute;
+    top:147px;
+    left:0;
 }
 
 #relevantList {
     text-align: center;
     border-bottom: 1px solid #555;
+    
     
 }
 #relevantList a{
@@ -44,3 +56,17 @@ li a:hover {
     padding: 8px 16px;
     text-decoration: none;
 }
+#gameDesc{
+    color:white;
+}
+
+#content {
+    float:right;
+}
+#gameImage{
+    width: 90%;
+    height: 30%;
+    image-rendering: -moz-crisp-edges;
+    -ms-interpolation-mode: bicubic;
+}
+
