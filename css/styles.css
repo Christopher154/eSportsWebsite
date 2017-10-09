@@ -14,15 +14,11 @@ html{
 }
 
 #navList a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+li {
+    float: left;
 }
 
-li a:hover {
-    background-color: #111;
+li a {
 }
 
 #relevantMenu {
